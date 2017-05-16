@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pig Dice!</title>
+</head>
+
+<body>
+  <div class="jumbotron">
+    <center><h1>Pig Dice!</h1></center>
+  </div>
+  <div class="container">
+  <form id="myForm">
+    <div class="form-group">
+      <label for="player">Player 1</label>
+      <input class="form-control" id="player1">
+      <label for="player">Player 2</label>
+      <input class="form-control" id="player2">
+
+      <button class="btn btn-default" id="submit">Submit</button>
+
+    </div>
+    <div class="game">
+
+      <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Number of Dice
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+  </ul>
+</div>
+
+<div id="player1Score" class="score">0</div>
+<div id="player2Score" class="score">0</div>
+
+<button onclick="rollDice">Roll Dice</button>
+<button onclick="hold">Hold</button>
+
+</div>
+
+<h2 id="status"></h2>
+</div>
+</body>
+
+</html>
